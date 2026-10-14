@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚽ Футбольные Пенальти</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <h1>⚽ Пенальти</h1>
+        <div class="stats">
+            <span>Забито: <b id="goals">0</b></span>
+            <span>Промахи: <b id="misses">0</b></span>
+        </div>
+
+        <div class="field" id="field">
+            <div class="goal">
+                <div class="net"></div>
+            </div>
+
+            <div class="goalkeeper" id="keeper">
+                <img src="images/goalkeeper.jpg" alt="Вратарь">
+            </div>
+
+            <div class="player">
+                <img src="images/player.jpg" alt="Игрок">
+            </div>
+
+            <div class="ball" id="ball">
+                <img src="images/ball.png" alt="Мяч">
+            </div>
+
+            <div class="target-zones" id="zones">
+                <div class="zone" data-x="15" data-y="30"></div>
+                <div class="zone" data-x="50" data-y="30"></div>
+                <div class="zone" data-x="85" data-y="30"></div>
+                <div class="zone" data-x="15" data-y="65"></div>
+                <div class="zone" data-x="50" data-y="65"></div>
+                <div class="zone" data-x="85" data-y="65"></div>
+            </div>
+        </div>
+
+        <p class="hint">Кликни по воротам, чтобы ударить! 🎯</p>
+        <button id="restart">🔄 Заново</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
